@@ -1,4 +1,12 @@
 import { useState } from 'react';
+import { 
+  Check, Scale, Lock, CheckCircle, FileText, Building2, Heart, 
+  Handshake, Users, Home, Hospital, Smile, AlertTriangle, 
+  DollarSign, ClipboardList, Clock, Briefcase, Cake, Wallet, 
+  Dog, Laptop, Star, Shield, TrendingUp, FileCheck, UserCheck,
+  ArrowRight, HelpCircle, Award, Baby, CircleDollarSign, PiggyBank,
+  FileSignature, Globe, X
+} from 'lucide-react';
 
 const Index = () => {
   const [openFAQ, setOpenFAQ] = useState<number | null>(0);
@@ -77,23 +85,33 @@ const Index = () => {
               {/* Value Props Quick List */}
               <ul className="space-y-3 mb-8">
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                  </div>
                   <span className="text-gray-800"><strong>Attorney-built documents</strong> – state-specific & legally binding</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                  </div>
                   <span className="text-gray-800"><strong>Create online in 20 minutes</strong> – no appointments needed</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                  </div>
                   <span className="text-gray-800"><strong>Save thousands vs attorneys</strong> – plans from $199</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                  </div>
                   <span className="text-gray-800"><strong>Avoid probate with Trusts</strong> – keep affairs private</span>
                 </li>
                 <li className="flex items-center gap-3">
-                  <span className="w-6 h-6 bg-green-500 text-white rounded-full flex items-center justify-center flex-shrink-0 text-sm font-bold">✓</span>
+                  <div className="w-6 h-6 bg-green-500 rounded-full flex items-center justify-center flex-shrink-0">
+                    <Check className="w-4 h-4 text-white" strokeWidth={3} />
+                  </div>
                   <span className="text-gray-800"><strong>30-day money-back guarantee</strong> – risk-free</span>
                 </li>
               </ul>
@@ -113,15 +131,15 @@ const Index = () => {
               {/* Trust Badges */}
               <div className="flex flex-wrap items-center gap-6 mt-8">
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">⚖️</span>
+                  <Scale className="w-6 h-6 text-[#bb9446]" />
                   <span className="text-sm font-medium text-[#3E3E3E]">Attorney-Built</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">🔒</span>
+                  <Lock className="w-6 h-6 text-[#bb9446]" />
                   <span className="text-sm font-medium text-[#3E3E3E]">Bank-Level Security</span>
                 </div>
                 <div className="flex items-center gap-2">
-                  <span className="text-2xl">✅</span>
+                  <CheckCircle className="w-6 h-6 text-[#bb9446]" />
                   <span className="text-sm font-medium text-[#3E3E3E]">State-Specific</span>
                 </div>
               </div>
@@ -137,7 +155,7 @@ const Index = () => {
                 <div className="space-y-4">
                   {/* Last Will & Testament */}
                   <div className="flex items-start gap-3 p-3 bg-blue-50 rounded-lg border border-blue-200">
-                    <span className="text-2xl">📄</span>
+                    <FileText className="w-8 h-8 text-blue-600 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-[#3E3E3E]">Last Will & Testament</div>
                       <div className="text-sm text-gray-600">Decide who gets your assets, name guardians for children/pets</div>
@@ -146,7 +164,7 @@ const Index = () => {
                   
                   {/* Living Trust (Trust Plan Only) */}
                   <div className="flex items-start gap-3 p-3 bg-purple-50 rounded-lg border border-purple-200">
-                    <span className="text-2xl">🏛️</span>
+                    <Building2 className="w-8 h-8 text-purple-600 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-[#3E3E3E]">Revocable Living Trust</div>
                       <div className="text-sm text-gray-600">Avoid probate, keep affairs private (Trust plan only)</div>
@@ -155,7 +173,7 @@ const Index = () => {
                   
                   {/* Healthcare Directives */}
                   <div className="flex items-start gap-3 p-3 bg-green-50 rounded-lg border border-green-200">
-                    <span className="text-2xl">🏥</span>
+                    <Hospital className="w-8 h-8 text-green-600 flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-[#3E3E3E]">Healthcare Directives</div>
                       <div className="text-sm text-gray-600">Living Will, medical decisions, HIPAA authorization</div>
@@ -164,7 +182,7 @@ const Index = () => {
                   
                   {/* Power of Attorney */}
                   <div className="flex items-start gap-3 p-3 bg-yellow-50 rounded-lg border border-yellow-200">
-                    <span className="text-2xl">🤝</span>
+                    <Handshake className="w-8 h-8 text-[#bb9446] flex-shrink-0" />
                     <div>
                       <div className="font-semibold text-[#3E3E3E]">Power of Attorney</div>
                       <div className="text-sm text-gray-600">Assign someone to handle finances if incapacitated</div>
@@ -201,7 +219,9 @@ const Index = () => {
             
             {/* Reason 1: Protect Children */}
             <div className="bg-gradient-to-br from-blue-50 to-indigo-50 rounded-lg p-6 text-center shadow-md border-2 border-blue-200">
-              <div className="text-5xl mb-4">👨‍👩‍👧‍👦</div>
+              <div className="flex justify-center mb-4">
+                <Users className="w-12 h-12 text-blue-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Protect Your Children
               </h3>
@@ -212,7 +232,9 @@ const Index = () => {
             
             {/* Reason 2: Control Assets */}
             <div className="bg-gradient-to-br from-green-50 to-teal-50 rounded-lg p-6 text-center shadow-md border-2 border-green-200">
-              <div className="text-5xl mb-4">🏡</div>
+              <div className="flex justify-center mb-4">
+                <Home className="w-12 h-12 text-green-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Control Your Assets
               </h3>
@@ -223,7 +245,9 @@ const Index = () => {
             
             {/* Reason 3: Avoid Probate */}
             <div className="bg-gradient-to-br from-purple-50 to-pink-50 rounded-lg p-6 text-center shadow-md border-2 border-purple-200">
-              <div className="text-5xl mb-4">⚖️</div>
+              <div className="flex justify-center mb-4">
+                <Scale className="w-12 h-12 text-purple-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Avoid Probate Court
               </h3>
@@ -234,7 +258,9 @@ const Index = () => {
             
             {/* Reason 4: Medical Wishes */}
             <div className="bg-gradient-to-br from-orange-50 to-red-50 rounded-lg p-6 text-center shadow-md border-2 border-orange-200">
-              <div className="text-5xl mb-4">🏥</div>
+              <div className="flex justify-center mb-4">
+                <Hospital className="w-12 h-12 text-orange-600" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Specify Medical Wishes
               </h3>
@@ -245,7 +271,9 @@ const Index = () => {
             
             {/* Reason 5: Peace of Mind */}
             <div className="bg-gradient-to-br from-yellow-50 to-orange-50 rounded-lg p-6 text-center shadow-md border-2 border-yellow-200">
-              <div className="text-5xl mb-4">😌</div>
+              <div className="flex justify-center mb-4">
+                <Smile className="w-12 h-12 text-[#f9c65d]" />
+              </div>
               <h3 className="text-lg font-bold text-[#3E3E3E] mb-3">
                 Give Peace of Mind
               </h3>
@@ -259,7 +287,7 @@ const Index = () => {
           {/* Urgency Callout */}
           <div className="bg-orange-50 border-2 border-orange-300 rounded-lg p-8 max-w-4xl mx-auto">
             <div className="flex items-start gap-4">
-              <span className="text-5xl">⚠️</span>
+              <AlertTriangle className="w-12 h-12 text-orange-500 flex-shrink-0" />
               <div>
                 <h3 className="text-2xl font-bold text-[#3E3E3E] mb-3">
                   What Happens Without an Estate Plan?
@@ -311,7 +339,9 @@ const Index = () => {
             {/* Will Estate Plan */}
             <div className="bg-white rounded-lg p-8 shadow-lg">
               <div className="text-center mb-6">
-                <div className="text-5xl mb-4">📄</div>
+                <div className="flex justify-center mb-4">
+                  <FileText className="w-16 h-16 text-blue-600" />
+                </div>
                 <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">Will Estate Plan</h3>
                 <div className="text-3xl font-bold text-blue-600 mb-2">$199</div>
                 <div className="text-sm text-gray-600">Individual | $299 Couples</div>
@@ -319,23 +349,23 @@ const Index = () => {
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Last Will & Testament</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Name guardians for children & pets</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Healthcare directives & Living Will</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Power of Attorney</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">State-specific & legally binding</span>
                 </div>
               </div>
@@ -383,7 +413,9 @@ const Index = () => {
               </div>
               
               <div className="text-center mb-6">
-                <div className="text-5xl mb-4">🏛️</div>
+                <div className="flex justify-center mb-4">
+                  <Building2 className="w-16 h-16 text-[#bb9446]" />
+                </div>
                 <h3 className="text-2xl font-bold text-[#3E3E3E] mb-2">Trust Estate Plan</h3>
                 <div className="text-3xl font-bold text-[#bb9446] mb-2">$499</div>
                 <div className="text-sm text-gray-600">Individual | $599 Couples</div>
@@ -391,31 +423,31 @@ const Index = () => {
               
               <div className="space-y-4 mb-6">
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>Revocable Living Trust</strong></span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>Avoid probate entirely</strong></span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Last Will & Testament (pour-over)</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Name guardians for children & pets</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Healthcare directives & Living Will</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700">Power of Attorney</span>
                 </div>
                 <div className="flex items-start gap-3">
-                  <span className="text-green-500 text-xl font-bold">✓</span>
+                  <Check className="w-5 h-5 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>First year membership FREE</strong> ($39/year after)</span>
                 </div>
               </div>
@@ -472,19 +504,19 @@ const Index = () => {
                 <h4 className="font-semibold text-[#3E3E3E] mb-3">With a Will (Probate)</h4>
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500">✗</span>
+                    <X className="w-4 h-4 text-red-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>6-24 months court process</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500">✗</span>
+                    <X className="w-4 h-4 text-red-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>3-7% of estate value in fees</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500">✗</span>
+                    <X className="w-4 h-4 text-red-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>Public record (anyone can see)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-red-500">✗</span>
+                    <X className="w-4 h-4 text-red-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>Family can contest</span>
                   </li>
                 </ul>
@@ -493,19 +525,19 @@ const Index = () => {
                 <h4 className="font-semibold text-[#3E3E3E] mb-3">With a Trust (No Probate)</h4>
                 <ul className="text-sm text-gray-700 space-y-2">
                   <li className="flex items-start gap-2">
-                    <span className="text-green-500">✓</span>
+                    <Check className="w-4 h-4 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>Immediate transfer (days/weeks)</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-500">✓</span>
+                    <Check className="w-4 h-4 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>Minimal fees</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-500">✓</span>
+                    <Check className="w-4 h-4 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>100% private</span>
                   </li>
                   <li className="flex items-start gap-2">
-                    <span className="text-green-500">✓</span>
+                    <Check className="w-4 h-4 text-green-500 flex-shrink-0" strokeWidth={2.5} />
                     <span>Much harder to contest</span>
                   </li>
                 </ul>
@@ -625,23 +657,23 @@ const Index = () => {
               
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Last Will & Testament</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Healthcare directives</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Power of Attorney</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Digital vault storage</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">24/7 customer support</span>
                 </div>
               </div>
@@ -675,39 +707,39 @@ const Index = () => {
               
               <div className="space-y-3 mb-6">
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>Revocable Living Trust</strong></span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>Avoid probate entirely</strong></span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Last Will & Testament</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Healthcare directives</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Power of Attorney</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Digital vault storage</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700"><strong>First year FREE membership</strong></span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Unlimited updates (1st year)</span>
                 </div>
                 <div className="flex items-center gap-3">
-                  <span className="text-green-500 text-xl">✓</span>
+                  <Check className="w-5 h-5 text-green-500" strokeWidth={2.5} />
                   <span className="text-gray-700">Priority support</span>
                 </div>
               </div>
@@ -831,7 +863,9 @@ const Index = () => {
             
             {/* Parents with Minor Children */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">👨‍👩‍👧‍👦</div>
+              <div className="flex justify-center mb-4">
+                <Users className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Parents with Minor Children</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Critical need:</strong> Without a Will, courts decide who raises your children if something happens to you.
@@ -857,7 +891,9 @@ const Index = () => {
             
             {/* Homeowners */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">🏡</div>
+              <div className="flex justify-center mb-4">
+                <Home className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Homeowners</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Save your family thousands:</strong> Probate costs 3-7% of estate value. On a $500K home, that's $15K-$35K in legal fees.
@@ -883,7 +919,9 @@ const Index = () => {
             
             {/* Blended Families */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">👨‍👩‍👧‍👦</div>
+              <div className="flex justify-center mb-4">
+                <Users className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Blended Families</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Prevent family conflict:</strong> State law may give assets to people you don't intend. Clearly document your wishes.
@@ -909,7 +947,9 @@ const Index = () => {
             
             {/* Unmarried Couples */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">💑</div>
+              <div className="flex justify-center mb-4">
+                <Heart className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Unmarried Couples</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>No automatic rights:</strong> Without marriage, your partner gets NOTHING by default. State law gives everything to blood relatives.
@@ -935,7 +975,9 @@ const Index = () => {
             
             {/* Business Owners */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">💼</div>
+              <div className="flex justify-center mb-4">
+                <Briefcase className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Business Owners</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Protect your business:</strong> Without planning, your business could be frozen or sold during probate, destroying value.
@@ -961,7 +1003,9 @@ const Index = () => {
             
             {/* Anyone Over 40 */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">🎂</div>
+              <div className="flex justify-center mb-4">
+                <Cake className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Anyone Over 40</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Life is unpredictable:</strong> Accidents, illness, and incapacity can happen at any age. Protect yourself and your family.
@@ -987,7 +1031,9 @@ const Index = () => {
             
             {/* High Net Worth */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">💰</div>
+              <div className="flex justify-center mb-4">
+                <DollarSign className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">High Net Worth Individuals</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Significant assets ($500K+):</strong> Probate is expensive, public, and slow. Trusts protect wealth and privacy.
@@ -1013,7 +1059,9 @@ const Index = () => {
             
             {/* Pet Parents */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">🐕</div>
+              <div className="flex justify-center mb-4">
+                <Dog className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Pet Parents</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Protect your pets:</strong> Without planning, your pets could end up in shelters. Name caregivers and set aside funds.
@@ -1039,7 +1087,9 @@ const Index = () => {
             
             {/* Digital Assets */}
             <div className="bg-white rounded-lg p-6 shadow-md">
-              <div className="text-5xl mb-4 text-center">💻</div>
+              <div className="flex justify-center mb-4">
+                <Laptop className="w-12 h-12 text-[#bb9446]" />
+              </div>
               <h3 className="text-xl font-bold text-[#3E3E3E] mb-3 text-center">Digital Asset Owners</h3>
               <p className="text-sm text-gray-700 mb-4">
                 <strong>Modern wealth:</strong> Cryptocurrency, online businesses, digital art, and social media accounts need planning too.
@@ -1102,11 +1152,9 @@ const Index = () => {
             {/* Testimonial 1 */}
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "As a new mom, I kept putting off creating a Will because I thought it would be complicated and expensive. This platform made it SO easy. In 20 minutes, I named guardians for my daughter and designated where everything goes. The peace of mind is priceless."
@@ -1120,11 +1168,9 @@ const Index = () => {
             {/* Testimonial 2 */}
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "My wife and I own our home and have investment accounts. We knew we needed a Trust to avoid probate but didn't want to spend $5,000 on an attorney. For $599, we got everything we needed—state-specific, legally binding, and done from our couch in under an hour."
@@ -1138,11 +1184,9 @@ const Index = () => {
             {/* Testimonial 3 */}
             <div className="bg-[#f8d899] rounded-lg p-6 shadow-md">
               <div className="flex gap-1 mb-4">
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
-                <span className="text-yellow-500 text-xl">⭐</span>
+                {[...Array(5)].map((_, i) => (
+                  <Star key={i} className="w-5 h-5 text-[#f9c65d] fill-[#f9c65d]" />
+                ))}
               </div>
               <p className="text-gray-700 mb-4 italic leading-relaxed">
                 "My dad passed away without a Will and the probate process was a nightmare—9 months, tons of legal fees, and family fighting. I swore I'd never put my kids through that. Creating my Trust online was the smartest thing I've ever done. My estate will transfer immediately with zero court involvement."
@@ -1182,17 +1226,23 @@ const Index = () => {
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 text-center">
               <div>
-                <div className="text-4xl mb-2">⚖️</div>
+                <div className="flex justify-center mb-2">
+                  <Scale className="w-10 h-10 text-[#bb9446]" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">Attorney-Built Documents</div>
                 <div className="text-sm text-gray-600">Created by licensed legal professionals</div>
               </div>
               <div>
-                <div className="text-4xl mb-2">🔒</div>
+                <div className="flex justify-center mb-2">
+                  <Lock className="w-10 h-10 text-[#bb9446]" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">Bank-Level Encryption</div>
                 <div className="text-sm text-gray-600">256-bit SSL security protection</div>
               </div>
               <div>
-                <div className="text-4xl mb-2">✅</div>
+                <div className="flex justify-center mb-2">
+                  <CheckCircle className="w-10 h-10 text-[#bb9446]" />
+                </div>
                 <div className="font-semibold text-[#3E3E3E] mb-1">State-Specific Compliance</div>
                 <div className="text-sm text-gray-600">Meets all legal requirements</div>
               </div>
@@ -1228,19 +1278,19 @@ const Index = () => {
           {/* Trust Elements */}
           <div className="flex flex-wrap items-center justify-center gap-8 mt-12">
             <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6" strokeWidth={2.5} />
               <span className="text-sm font-medium">Attorney-Built</span>
             </div>
             <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6" strokeWidth={2.5} />
               <span className="text-sm font-medium">State-Specific</span>
             </div>
             <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <span className="text-2xl">✓</span>
+              <Check className="w-6 h-6" strokeWidth={2.5} />
               <span className="text-sm font-medium">Legally Binding</span>
             </div>
             <div className="flex items-center gap-2 text-[#3E3E3E]">
-              <span className="text-2xl">🔒</span>
+              <Lock className="w-6 h-6" />
               <span className="text-sm font-medium">Bank-Level Security</span>
             </div>
           </div>
