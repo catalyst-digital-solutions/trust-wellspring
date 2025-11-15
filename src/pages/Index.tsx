@@ -109,14 +109,14 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row gap-4">
                 <button 
                   onClick={handleCTAClick}
-                  className="bg-[#f9c65d] hover:bg-[#bb9446] text-[#3E3E3E] hover:text-white text-lg font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 flex items-center justify-center gap-2"
+                  className="bg-[#f97316] hover:bg-[#ea580c] text-white text-lg font-bold px-8 py-4 rounded-lg shadow-lg hover:shadow-xl transition duration-200 flex items-center justify-center gap-2"
                 >
                   Get Started ($199)
                   <ArrowRight size={20} />
                 </button>
                 <button 
                   onClick={handleCTAClick}
-                  className="bg-white hover:bg-gray-50 text-[#3E3E3E] text-lg font-semibold px-8 py-4 rounded-lg border-2 border-[#CBCBCB] hover:border-[#bb9446] transition duration-200 flex items-center justify-center gap-2"
+                  className="bg-white hover:bg-gray-50 text-[#3E3E3E] text-lg font-semibold px-8 py-4 rounded-lg border-2 border-gray-300 transition duration-200 flex items-center justify-center gap-2"
                 >
                   See Trust Plans
                   <ArrowRight size={20} />
