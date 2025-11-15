@@ -61,7 +61,7 @@ const Index = () => {
   return (
     <main className="min-h-screen">
       {/* SECTION 1: HERO */}
-      <section className="bg-[#FFF8E7] py-16 md:py-24 px-6 md:px-8">
+      <section className="bg-gradient-to-br from-white via-amber-50 to-white py-16 md:py-24 px-6 md:px-8">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
             
